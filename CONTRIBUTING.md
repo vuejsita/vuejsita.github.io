@@ -11,3 +11,7 @@
     - tornare al feature branch e ribasare `git checkout - && git rebase {destinazione}`
     - risolvere eventuali conflitti
     - pushare il feature branch `git push -f`. N.B.: `-f` (force è necessario ad evitare di eseguire un pull e risolvere una seconda volta eventuali conflitti).
+ - Eventuali url di pagine:
+    - dovranno essere in lingua italiana.
+    - parole multiple dovranno essere divise da `-`.
+    - es. `eventi` / `chi-siamo` / `dicono-di-noi` / *ecc...*
