@@ -5,7 +5,15 @@
       <h1 class="title">vuebsite</h1>
       <div class="links">
         <a
-          href="https://github.com/vuejsita/vuebsite"
+          href="https://nuxtjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
@@ -17,8 +25,10 @@
   </div>
 </template>
 
-<script>
-export default {}
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({})
 </script>
 
 <style>
