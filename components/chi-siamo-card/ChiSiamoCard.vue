@@ -1,15 +1,15 @@
 <template>
-    <div class="border border-gray-100 rounded-md p-8 m-8 bg-opacity-50 flex justify-center">
+    <div class="border border-gray-100 rounded-md p-8 m-8 bg-opacity-50 flex">
         <!-- transform transition-all duration-300 ease-in scale-100 -->
         <div class="text-center">
-            <img class="avatar" 
-                :src="this.user.imgUrl" 
-                alt="Michele Vitiello Bonaventura" 
+            <img class="avatar m-auto" 
+                :src="user.image" 
+                :alt="user.name" 
             />
-            <h1 class="text-xl mt-2 mb-2">{{user.name}}</h1>
-            <p class="italic mt-2 mb-2">"{{user.shortDescription}}.</p>
+            <h1 class="text-xl mt-2 mb-2 font-semibold">{{user.name}}</h1>
+            <p class="italic mt-2 mb-2">"{{user.description}}.</p>
             <div class="socialLink">
-                <a v-for="(social, k) in user.social" :key="k+social.key" :href="social.link" class="p-2 text-grey rounded-md">{{social.name}}</a>
+                <a v-for="(link, name) in user.links" :key="name+user.name" :href="link" target="_blank" class="p-2 text-grey text-underline">{{name}}</a>
             </div>
         </div>
     </div>
@@ -25,10 +25,10 @@ export default Vue.extend({
       }
     },
     props: {
-        imgUrl: {type: String, required: true},
+        image: {type: String, required: true},
         name: {type: String, required: true},
-        shortDescription: {type: String, required: true},
-        social: {type: Array, required: true},
+        description: {type: String, required: true},
+        links: {type: Object, required: true},
     },
     mounted(): void {
         this.user = this.$props;
