@@ -16,15 +16,15 @@
 ### GIT
 
 - **Non** eseguire il push di commit direttamente verso il branch main
-- Implementazioni monotematiche: creare un feature branch con nome possibilmente descrittivo (es: id dell’issue + brevissima descrizione, 123-feature-foo)
-- Implementazioni articolate: creare un integration branch (es: integration/feature-foo) da cui poi forkare ulteriori feature branches specifici (es: 123-feature-foo-bar)
+- Implementazioni monotematiche: creare un feature branch con nome possibilmente descrittivo (es: `feature/feature-name`)
+- Implementazioni articolate: creare un integration branch (es: `integration/big-feature-name`) da cui poi forkare ulteriori feature branches specifici (es: `feature/small-feature-name`)
 - Creare pull requests più semplici possibile per facilitare la review
-- Prima di mergiare verso main (o integration branch) di seguito `destinazione`:
-    - eseguire un pull del branch di destinazione `git checkout {destinazione} && git pull`, 
-    - tornare al feature branch e ribasare `git checkout - && git rebase {destinazione}`
-    - risolvere eventuali conflitti
+- Prima di mergiare verso `main` (o integration branch) di seguito `destinazione`:
+    - Eseguire un pull del branch di destinazione `git checkout {destinazione} && git pull`.
+    - Tornare al feature branch e ribasare `git checkout - && git rebase {destinazione}`.
+    - Risolvere eventuali conflitti.
     - Eseguire lo squash dei commit del branch (qualora si voglia eseguire lo `squash` da riga di comando).
-    - pushare il feature branch `git push -f`. N.B.: `-f` (force è necessario ad evitare di eseguire un pull e risolvere una seconda volta eventuali conflitti).
+    - Pushare il feature branch `git push -f`. N.B.: `-f` (force è necessario ad evitare di eseguire un pull e risolvere una seconda volta eventuali conflitti).
     - **Se** non si è eseguito lo `squash` dei commit da riga di comando, sarà comunque possibile eseguire lo `squash` tramite il pulsante di "Merge pull request" messo a disposizione dall'interfacci di GitHub.  
         Basterà clickare sul pulsante 🔽 accanto al pulsante di "Merge pull request" e selezionare "Squash and merge".
 
