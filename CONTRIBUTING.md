@@ -23,7 +23,10 @@
     - eseguire un pull del branch di destinazione `git checkout {destinazione} && git pull`, 
     - tornare al feature branch e ribasare `git checkout - && git rebase {destinazione}`
     - risolvere eventuali conflitti
+    - Eseguire lo squash dei commit del branch (qualora si voglia eseguire lo `squash` da riga di comando).
     - pushare il feature branch `git push -f`. N.B.: `-f` (force è necessario ad evitare di eseguire un pull e risolvere una seconda volta eventuali conflitti).
+    - **Se** non si è eseguito lo `squash` dei commit da riga di comando, sarà comunque possibile eseguire lo `squash` tramite il pulsante di "Merge pull request" messo a disposizione dall'interfacci di GitHub.  
+        Basterà clickare sul pulsante 🔽 accanto al pulsante di "Merge pull request" e selezionare "Squash and merge".
 
 ## Nomenclatura dei file
 
