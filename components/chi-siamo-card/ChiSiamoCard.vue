@@ -16,27 +16,16 @@
 </template>
 
 <script lang="ts">
-import  Vue from 'vue'
+import  Vue, { PropType } from 'vue'
+import User from '~/types/User';
 
 export default Vue.extend({
-    data(){
-      return {
-          user: Object
-      }
-    },
     props: {
-        image: {type: String, required: true},
-        name: {type: String, required: true},
-        description: {type: String, required: true},
-        links: {type: Object, required: true},
+        user: {
+            required: true,
+            type: Object as PropType<User>,
+        }
     },
-    mounted(): void {
-        this.user = this.$props;
-    },
-    methods : {
-      
-        
-    }
 })
 </script>
 
