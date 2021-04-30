@@ -2,15 +2,15 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">vuebsite</h1>
+      <!-- <h1 class="title">Vue.js Italia</h1> -->
       <div class="links">
         <a
-          href="https://github.com/vuejsita/vuebsite"
+          href="https://t.me/vue_ita"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="button--grey mt-8"
         >
-          GitHub
+          Community Telegram
         </a>
       </div>
     </div>
