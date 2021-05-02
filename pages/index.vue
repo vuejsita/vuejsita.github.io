@@ -2,7 +2,7 @@
   <div id="home">
     <div>
       <Logo />
-      <h1 class="font-bold mt-6">
+      <h1 class="mt-6">
         Vue.js Italia
       </h1>
       <a
@@ -10,7 +10,12 @@
         target="_blank"
         rel="noopener noreferrer"
         class="btn-primary inline-block mt-6">
-        Community Telegram
+        <div class="flex items-center">
+          <unicon name="telegram-alt"
+                  fill="white"
+                  class="mr-2" />
+          Unisciti al gruppo
+        </div>
       </a>
     </div>
   </div>

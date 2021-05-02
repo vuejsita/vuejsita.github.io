@@ -21,8 +21,9 @@ const config = {
             // Buttons
             const buttonBaseStyle = {
                 color: theme("colors.white"),
-                padding: theme("spacing.4"),
-                borderRadius: theme("borderRadius.3xl")
+                padding: `${theme("spacing.2")} ${theme("spacing.4")}`,
+                borderRadius: theme("borderRadius.3xl"),
+                fontWeight: theme("fontWeight.bold")
             };
             const buttons = {
                 ".btn-primary": {
@@ -38,7 +39,6 @@ const config = {
                     ...buttonBaseStyle
                 }
             };
-
             addComponents(buttons);
         })
     ]
