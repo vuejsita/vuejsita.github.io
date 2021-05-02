@@ -1,17 +1,17 @@
 <template>
-  <div class="container">
+  <div id="home">
     <div>
       <Logo />
-      <h1 class="title font-bold">Vue.js Italia</h1>
-      <div class="links mt-4">
-        <a
-          href="https://t.me/vue_ita"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-primary mt-8">
-          Community Telegram
-        </a>
-      </div>
+      <h1 class="font-bold mt-6">
+        Vue.js Italia
+      </h1>
+      <a
+        href="https://t.me/vue_ita"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary inline-block mt-6">
+        Community Telegram
+      </a>
     </div>
   </div>
 </template>
@@ -19,27 +19,11 @@
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({
-    data: () => ({
-        value: false
-    }),
-    methods: {
-        sample (): void {
-            this.value = true;
-        }
-    }
-});
+export default Vue.extend({});
 </script>
 
-<style>
-
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="postcss" scoped>
+#home {
+  @apply min-h-screen flex justify-center items-center text-center;
 }
-
 </style>
