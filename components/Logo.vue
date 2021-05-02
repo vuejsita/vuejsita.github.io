@@ -7,7 +7,7 @@
 
 <style>
 .NuxtLogo {
-  animation: 1s appear;
+  animation: 1s appear ease-out;
   margin: auto;
 }
 
