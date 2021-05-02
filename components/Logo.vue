@@ -1,5 +1,8 @@
 <template>
-  <img class="NuxtLogo" width="245" height="180" src="~/assets/logo.png" />
+  <img class="NuxtLogo"
+       width="245"
+       height="180"
+       src="~/assets/logo.png">
 </template>
 
 <style>

@@ -8,8 +8,7 @@
           href="https://t.me/vue_ita"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey mt-8"
-        >
+          class="button--grey mt-8">
           Community Telegram
         </a>
       </div>
@@ -18,9 +17,18 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 
-export default Vue.extend({})
+export default Vue.extend({
+    data: () => ({
+        value: false
+    }),
+    methods: {
+        sample (): void {
+            this.value = true;
+        }
+    }
+});
 </script>
 
 <style>
