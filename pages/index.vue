@@ -7,7 +7,7 @@
       </h1>
       <h2 class="mt-3">
         Seguici su Telegram
-        <fa-icon :icon="['fab', 'telegram-plane']"></fa-icon>
+        <fa-icon :icon="[ 'fab', 'telegram-plane' ]" />
       </h2>
       <a
         href="https://t.me/vue_ita"

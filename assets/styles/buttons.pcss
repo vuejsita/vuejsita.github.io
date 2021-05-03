@@ -2,17 +2,17 @@
 .btn-primary,
 .btn-secondary,
 .btn-accent {
-  @apply inline-block cursor-pointer text-white py-2 px-4 font-bold border-2 rounded-3xl transition-colors hover:bg-white hover:text-black focus:ring-2;
+  @apply inline-block cursor-pointer text-white py-2 px-4 font-bold rounded-3xl transition-colors focus:ring-2;
 }
 
 .btn-primary {
-  @apply bg-primary border-primary focus:ring-primary focus:ring-opacity-50;
+  @apply bg-primary hover:bg-primary-dark focus:ring-primary focus:ring-opacity-50;
 }
 
 .btn-secondary {
-  @apply bg-secondary border-secondary focus:ring-secondary focus:ring-opacity-50;
+  @apply bg-secondary hover:bg-secondary-dark focus:ring-secondary focus:ring-opacity-50;
 }
 
 .btn-accent {
-  @apply bg-accent border-accent focus:ring-accent focus:ring-opacity-50;
+  @apply bg-accent hover:bg-accent-dark focus:ring-accent focus:ring-opacity-50;
 }
