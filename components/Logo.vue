@@ -2,12 +2,12 @@
   <img class="NuxtLogo"
        width="245"
        height="180"
-       src="~/assets/logo.png">
+       src="~/assets/img/logo.png">
 </template>
 
 <style>
 .NuxtLogo {
-  animation: 1s appear;
+  animation: 1s appear ease-out;
   margin: auto;
 }
 

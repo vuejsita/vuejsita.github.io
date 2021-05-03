@@ -1,17 +1,21 @@
 <template>
-  <div class="container">
+  <div id="home">
     <div>
       <Logo />
-      <!-- <h1 class="title">Vue.js Italia</h1> -->
-      <div class="links">
-        <a
-          href="https://t.me/vue_ita"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey mt-8">
-          Community Telegram
-        </a>
-      </div>
+      <h1 class="mt-6">
+        Vue.js Italia
+      </h1>
+      <h2 class="mt-3">
+        Seguici su Telegram
+        <fa-icon :icon="[ 'fab', 'telegram-plane' ]" />
+      </h2>
+      <a
+        href="https://t.me/vue_ita"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary mt-6">
+        Unisciti al gruppo
+      </a>
     </div>
   </div>
 </template>
@@ -19,52 +23,11 @@
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({
-    data: () => ({
-        value: false
-    }),
-    methods: {
-        sample (): void {
-            this.value = true;
-        }
-    }
-});
+export default Vue.extend({});
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+<style lang="postcss" scoped>
+#home {
+  @apply min-h-screen flex justify-center items-center text-center;
 }
 </style>
