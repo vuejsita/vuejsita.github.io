@@ -2,10 +2,10 @@
   <div id="home">
     <div>
       <Logo />
-      <h1 class="title">
+      <h1 class="mt-6">
         Vue.js Italia
       </h1>
-      <h2 class="subtitle">
+      <h2 class="mt-3">
         Seguici su Telegram
         <fa-icon :icon="['fab', 'telegram-plane']"></fa-icon>
       </h2>
@@ -29,11 +29,5 @@ export default Vue.extend({});
 <style lang="postcss" scoped>
 #home {
   @apply min-h-screen flex justify-center items-center text-center;
-}
-.title {
-  @apply mt-6 font-bold;
-}
-.subtitle {
-  @apply mt-3 text-gray-500;
 }
 </style>
