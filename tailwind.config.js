@@ -5,6 +5,11 @@ const config = {
         },
         extend: {
             colors: {
+                nuxt: {
+                    light: "#41B883",
+                    DEFAULT: "#3B8070",
+                    dark: "#35495E"
+                },
                 primary: {
                     light: "#86D5B1",
                     DEFAULT: "#41B883",
