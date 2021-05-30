@@ -1,11 +1,10 @@
 <template>
   <a
+    class="social-link"
     :href="link"
     target="_blank"
-    rel="noopener noreferrer"
-    class="social-link">
-    <fa-icon :icon="icon"
-             size="xl" />
+    rel="noopener noreferrer">
+    <fa-icon :icon="icon" />
   </a>
 </template>
 
@@ -55,7 +54,7 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-.social-link {
-  @apply text-gray-500 rounded-full h-24 w-24;
+.social-link .svg-inline--fa {
+  @apply text-4xl text-gray-500;
 }
 </style>
