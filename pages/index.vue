@@ -5,25 +5,31 @@
       <h1 class="mt-6">
         Vue.js Italia
       </h1>
-      <h2 class="mt-3">
-        Seguici su Telegram
-        <fa-icon :icon="[ 'fab', 'telegram-plane' ]" />
-      </h2>
-      <a
-        href="https://t.me/vue_ita"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-primary mt-6">
-        Unisciti al gruppo
-      </a>
+      <h3 class="my-3">
+        Unisciti a noi
+      </h3>
+      <SocialLink class="mx-2"
+                  :to="telegram" />
+      <h3 class="my-3">
+        Rimani aggiornato sulle ultime novità
+      </h3>
+      <SocialLink class="mx-2"
+                  :to="twitter" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import SocialLink, { Socials } from "~/components/SocialLink.vue";
 
-export default Vue.extend({});
+export default Vue.extend({
+    components: { SocialLink },
+    data: () => ({
+        telegram: Socials.Telegram,
+        twitter: Socials.Twitter
+    })
+});
 </script>
 
 <style lang="postcss" scoped>
