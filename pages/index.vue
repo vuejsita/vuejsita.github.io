@@ -5,11 +5,16 @@
       <h1 class="mt-6">
         Vue.js Italia
       </h1>
-      <h2 class="mt-3">
-        Seguici su Telegram
-      </h2>
-      <SocialLink :to="telegram" />
-      <SocialLink :to="twitter" />
+      <h3 class="my-3">
+        Unisciti a noi
+      </h3>
+      <SocialLink class="mx-2"
+                  :to="telegram" />
+      <h3 class="my-3">
+        Rimani aggiornato sulle ultime novità
+      </h3>
+      <SocialLink class="mx-2"
+                  :to="twitter" />
     </div>
   </div>
 </template>
