@@ -7,23 +7,24 @@
       </h1>
       <h2 class="mt-3">
         Seguici su Telegram
-        <fa-icon :icon="[ 'fab', 'telegram-plane' ]" />
       </h2>
-      <a
-        href="https://t.me/vue_ita"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-primary mt-6">
-        Unisciti al gruppo
-      </a>
+      <SocialLink :to="telegram" />
+      <SocialLink :to="twitter" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import SocialLink, { Socials } from "~/components/SocialLink.vue";
 
-export default Vue.extend({});
+export default Vue.extend({
+    components: { SocialLink },
+    data: () => ({
+        telegram: Socials.Telegram,
+        twitter: Socials.Twitter
+    })
+});
 </script>
 
 <style lang="postcss" scoped>
