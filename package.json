@@ -31,7 +31,7 @@
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "typecheck": "nuxi typecheck",
-    "lint": "eslint .",
+    "lint": "eslint --ignore-path .gitignore .",
     "postinstall": "nuxi prepare",
     "prepare": "husky"
   },
