@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxt/content', '@nuxt/ui'
+    '@nuxt/content',
+    '@nuxt/ui'
   ],
   typescript: { typeCheck: true }
 })
