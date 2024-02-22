@@ -72,7 +72,7 @@
   @apply bg-white;
 
   .hero {
-    @apply relative isolate px-6 pt-14 lg:px-8;
+    @apply relative isolate flex items-center justify-center h-svh overflow-hidden;
   }
 
   .hero__background--top {
@@ -95,8 +95,6 @@
   }
 
   .hero__body {
-    @apply mx-auto max-w-2xl py-32 sm:py-48 lg:py-56;
-
     .hero__call-to-action {
       @apply hidden sm:mb-8 sm:flex sm:justify-center;
     }
