@@ -1,6 +1,6 @@
 {
   "name": "@vuejs-italia/vuebsait",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-dev.1",
   "description": "Il Vuebsait ufficiale della community Italiana di Vue.js: il framework JavaScript progressivo.",
   "keywords": [
     "Vue.js",
