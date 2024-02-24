@@ -1,6 +1,6 @@
 {
   "name": "@vuejs-italia/vuebsait",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "description": "Il Vuebsait ufficiale della community Italiana di Vue.js: il framework JavaScript progressivo.",
   "keywords": [
     "Vue.js",
@@ -37,14 +37,14 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.12.0",
-    "nuxt": "^3.10.2",
+    "nuxt": "^3.10.3",
     "vue": "^3.4.19"
   },
   "devDependencies": {
     "@heroicons/vue": "^2.1.1",
     "@nuxt/eslint-config": "^0.2.0",
-    "@nuxt/ui": "^2.13.0",
-    "eslint": "^8.56.0",
+    "@nuxt/ui": "^2.14.1",
+    "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "nuxi": "^3.10.1",
     "typescript": "^5.3.3",

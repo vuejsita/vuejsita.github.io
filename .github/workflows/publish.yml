@@ -15,23 +15,27 @@ jobs:
     steps:
       - name: Cloning source code
         uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: latest
+
       - name: Configuring Node.js 20 (LTS)
         uses: actions/setup-node@v4
         with:
-          cache: yarn
+          cache: pnpm
           node-version: 20
 
       - name: Installing dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Linting the source code
-        run: yarn lint
+        run: pnpm lint
         env:
           NODE_ENV: production
 
       - name: Checking type consistency
-        run: yarn typecheck
+        run: pnpm typecheck
       - name: Building the source code
-        run: yarn generate
+        run: pnpm generate
       - name: Uploading the artifact
         uses: actions/upload-artifact@v4
         with:
