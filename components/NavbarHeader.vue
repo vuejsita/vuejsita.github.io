@@ -17,7 +17,7 @@
           >
         </NuxtLink>
       </div>
-      <div class="flex lg:hidden">
+      <!--div class="flex lg:hidden">
         <button
           class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           type="button"
@@ -29,19 +29,19 @@
             aria-hidden="true"
           />
         </button>
-      </div>
+      </div-->
       <div class="hidden lg:flex lg:gap-x-12">
-        <NuxtLink
+        <!--NuxtLink
           v-for="item in navigation"
           :key="item.name"
           class="text-sm font-semibold leading-6 text-gray-900"
           :to="item.to"
         >
           {{ item.name }}
-        </NuxtLink>
+        </NuxtLink-->
       </div>
     </nav>
-    <Dialog
+    <!--Dialog
       as="div"
       class="lg:hidden"
       :open="mobileMenuOpen"
@@ -90,11 +90,11 @@
           </div>
         </div>
       </DialogPanel>
-    </Dialog>
+    </Dialog-->
   </header>
 </template>
 
-<script lang="ts" setup>
+<!--script lang="ts" setup>
 import { ref } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
@@ -107,6 +107,6 @@ const navigation = [
 ];
 
 const mobileMenuOpen = ref(false);
-</script>
+</script-->
 
 <style lang="postcss" scoped></style>
