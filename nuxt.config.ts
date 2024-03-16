@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
+  extends: [ "nuxt-umami" ],
   modules: ["@nuxt/content", "@nuxt/ui"],
-  typescript: { typeCheck: true },
-});
+  typescript: { typeCheck: true }
+})
