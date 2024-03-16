@@ -12,8 +12,10 @@
           <span class="sr-only">Vue.js Italia</span>
           <img
             class="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt="TailwindUI logo"
+            width="40"
+            height="40"
+            src="/logo-vue.png"
+            alt="Vuejs Developer Italia Logo"
           >
         </NuxtLink>
       </div>
